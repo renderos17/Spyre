@@ -1,11 +1,11 @@
 #include <Servo.h>
 
-int in1Pin = 22;
-int enablePin1 = 2;
-int in2Pin = 24;
-int in3Pin = 26;
-int enablePin2 = 3;
-int in4Pin = 28;
+int in1Pin = 10;
+int enablePin1 = 5;
+int in2Pin = 11;
+int in3Pin = 12;
+int enablePin2 = 6;
+int in4Pin = 13;
 
 byte commands[4] = {0x00,0x00,0x00,0x00};
 byte prevCommands[4] = {0x01,0x01,0x01,0x01};
