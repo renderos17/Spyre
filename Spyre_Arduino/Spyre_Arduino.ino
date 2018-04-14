@@ -70,14 +70,14 @@ void loop()
         if(commands[0] == 0xf1){  // Check if the move forward command was received
           if(prevCommands[0] != 0xf1){  // Change pin state to move forward only if previous state was not move forward
               setMotor1(leftSpeed, leftDir);
-              setMotor2(rightSpeed, true);
+              setMotor2(rightSpeed, rightDir);
               isNotMoving = false;
           }  
         }
         else if(commands[0] == 0xf2){  //Check if the move back command was received     
           if(prevCommands[0] != 0xf2){  //Change pin state to move back only if previous state was not move back
               setMotor1(leftSpeed, leftDir);
-              setMotor2(rightSpeed, false);
+              setMotor2(rightSpeed, rightDir);
               isNotMoving = false;
           }
         }
